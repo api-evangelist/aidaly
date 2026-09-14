@@ -1,0 +1,14 @@
+generated: '2026-09-14'
+method: searched
+source: https://www.aidaly.com/
+plan_count: 0
+note: >-
+  Aidaly publishes no API plans, developer tiers or usage pricing of any kind, because it publishes no API.
+  The company is not a software vendor selling access — it is a licensed home care agency whose service is
+  paid for by Medicaid, Medicare and private benefit programs on the family's behalf, so the money question
+  on its site is "are you eligible", not "what does it cost". The two money-shaped pages it does publish are
+  https://aidaly.com/check-my-eligibility (HTTP 200), an eligibility application rather than a purchase, and
+  https://aidaly.com/family-caregiver-pay-rate-guide (HTTP 200), a state-by-state guide to what a family
+  caregiver is PAID, which is an outbound wage table, not a price list. Every path probed for a developer
+  pricing page (/pricing, /developers, /api) returned 404. plan_count is 0 as a measured fact, not a gap.
+plans: []

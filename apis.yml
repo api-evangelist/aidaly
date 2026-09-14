@@ -1,17 +1,45 @@
 aid: aidaly
 name: Aidaly
-description: 'Aidaly is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: >-
+  Aidaly is a Miami, Florida home care company, founded in 2021 by CEO Margaret "Maggie" Norris, that trains,
+  employs and pays family members as professional caregivers so households can draw on Medicaid, Medicare and
+  private benefit dollars for care they were already giving unpaid. It runs a software-enabled care agency on
+  its own aidalyOS platform - Aidaly Care, a caregiver mobile app with insurance-required electronic visit
+  verification, care plans, visit notes and pay tracking; AidalyHQ, a credentialed console for supervising
+  nurses; a Learning Studio training library; and a care-team nurse network. It operates in South Florida,
+  Arizona and Michigan with Colorado and Massachusetts announced, is contracted into payer networks including
+  Molina Healthcare and Meridian, displays Vanta-attested SOC 2 and HIPAA badges, and raised $8.5M led by
+  Seven Seven Six. Aidaly publishes no public developer program, API documentation, SDK or machine-readable
+  contract.
 url: https://raw.githubusercontent.com/api-evangelist/aidaly/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
 specificationVersion: '0.20'
 created: '2026-09-14'
 modified: '2026-09-14'
 tags:
+- Health-Care
+- Home-Care
+- Caregiving
+- Medicaid
+- Health-Tech
+- Digital-Health
+- Benefits
+- Workforce
+- United-States
 - Company
+tags_raw:
+- Health Care
+- Home Care
+- Caregiving
+- Medicaid
+- Health Tech
+- Digital Health
+- Benefits
+- Workforce
+- United States
+- Company
+image: https://cdn.prod.website-files.com/618bf584fe2970faf482ca6f/618e89f9306762893fa79fd7_OG-Image.png
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +47,71 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/aidaly-domain-security.yml
 - type: Website
-  url: https://www.nasdaqprivatemarket.com/
+  url: https://www.aidaly.com/
+- type: About
+  url: https://aidaly.com/company
+- type: Blog
+  url: https://aidaly.com/learning-studio
+- type: HelpCenter
+  url: https://aidaly.com/frequently-asked-questions
+- type: SignUp
+  url: https://aidaly.com/check-my-eligibility
+- type: TermsOfService
+  url: https://aidaly.com/service-agreement
+- type: PrivacyPolicy
+  url: https://aidaly.com/privacy-policy
+- type: Newsroom
+  url: https://aidaly.com/press
+- type: Careers
+  url: https://aidaly.com/careers
+- type: LinkedIn
+  url: https://www.linkedin.com/company/aidaly
+- type: Conformance
+  url: conformance/aidaly-conformance.yml
+- type: Compliance
+  url: conformance/aidaly-conformance.yml
+- type: Plans
+  url: plans/aidaly-plans-pricing.yml
+- type: RateLimits
+  url: rate-limits/aidaly-rate-limits.yml
+- type: LLMsTxt
+  url: llms/aidaly-llms.txt
+x-tier: profiled
+x-tier-reason: 'enrichment pass 2026-09-14: full STEP 0b contract discovery run across every known host,
+  no public API surface found'
+x-enrichment:
+  date: '2026-09-14'
+  status: minimal
+  artifacts_added: 6
+  pass: local-v3
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    Aidaly ships software only as an end-user product — a caregiver mobile app and the credentialed
+    AidalyHQ web console at aidaly.com/hq, where access is requested by emailing operators@aidaly.com —
+    and publishes no developer surface at all: www.aidaly.com has no /developers, /api or /docs path,
+    api.aidaly.com, docs.aidaly.com and developer.aidaly.com do not resolve in DNS, app.aidaly.com 301s
+    its root to the marketing site and 404s every spec path, there is no Aidaly GitHub organization, and
+    no package exists on npm, PyPI, RubyGems, crates.io or Packagist.
+  evidence:
+  - url: https://www.aidaly.com/developers
+    status: 404
+  - url: https://www.aidaly.com/openapi.json
+    status: 404
+  - url: https://app.aidaly.com/openapi.json
+    status: 404
+  - url: https://app.aidaly.com/graphql
+    status: 404
+  - url: https://www.aidaly.com/.well-known/api-catalog
+    status: 404
+  - url: https://www.aidaly.com/llms.txt
+    status: 404
+  - url: https://api.github.com/orgs/aidaly
+    status: 404
+  - url: https://www.aidaly.com/
+    status: 200
+  checked: '2026-09-14'

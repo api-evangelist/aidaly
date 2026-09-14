@@ -1,0 +1,13 @@
+generated: '2026-09-14'
+method: searched
+source: https://www.aidaly.com/
+limit_count: 0
+note: >-
+  No rate limits are documented because no API is documented. Aidaly publishes no developer portal, API
+  reference or machine-readable contract on any host this record knows (aidaly.com, www.aidaly.com,
+  app.aidaly.com); api.aidaly.com, docs.aidaly.com and developer.aidaly.com do not resolve in DNS. There is
+  therefore no published quota, window, burst allowance, 429 behaviour or RateLimit-* response header to
+  record. limit_count is 0 as a measured absence, and no live unauthenticated endpoint exists against which
+  limits could be observed instead.
+rate_limits: []
+headers: []

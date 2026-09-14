@@ -1,0 +1,51 @@
+generated: '2026-09-14'
+method: searched
+source: https://www.aidaly.com/
+note: >-
+  Aidaly publishes no API contract, so there is no spec to derive technical conformance from. What it does
+  publish are two Vanta-attested compliance badges rendered in the footer of every page on www.aidaly.com
+  and repeated on the privacy policy. Those are organizational compliance claims about the company's care
+  and data operations, not conformance of an API to a wire standard, and they are recorded here as such.
+  Nothing in this file is derived from a specification; each entry names the page it was read from. No
+  report artifact, auditor name, audit period or trust center is published, so the claims are recorded as
+  self-asserted badges rather than as verified reports.
+conformance:
+- id: soc2
+  name: SOC 2
+  conforms: true
+  level: self-asserted-badge
+  evidence: >-
+    Vanta "SOC 2 Compliance" badge image rendered in the site footer
+    (cdn.prod.website-files.com/.../66cd3dd2e21fa1ce397a9f4e_Vanta_Compliance_SOC%202_Ilma%20%402x.png),
+    served on https://www.aidaly.com/ (HTTP 200) and https://aidaly.com/privacy-policy (HTTP 200).
+  report_published: false
+- id: hipaa
+  name: HIPAA
+  conforms: true
+  level: self-asserted-badge
+  evidence: >-
+    Vanta "HIPAA Compliance" badge image rendered in the site footer
+    (cdn.prod.website-files.com/.../66cd3d52282d23cc60f7b67d_Vanta_Compliance_HIPAA_Ilma%20%402x.png),
+    served on https://www.aidaly.com/ (HTTP 200) and https://aidaly.com/privacy-policy (HTTP 200). Aidaly
+    is a licensed home care agency contracted into Medicaid managed-care payer networks, so it handles PHI
+    as a covered entity or business associate.
+  report_published: false
+- id: evv
+  name: Electronic Visit Verification (21st Century Cures Act, Section 12006)
+  conforms: true
+  level: operational-claim
+  evidence: >-
+    https://aidaly.com/aidaly-care (HTTP 200) states the Aidaly Care app performs "seamless
+    insurance-required visit verification" clock-in/clock-out for caregiver visits, which is the federally
+    mandated EVV capture Medicaid personal-care services require. Aidaly consumes state/aggregator EVV
+    systems here; it does not publish an EVV interface of its own, and no EVV data-submission specification
+    or endpoint is documented publicly.
+  report_published: false
+domain_standards:
+  checked: true
+  found: []
+  note: >-
+    The regime shortlist for a US Medicaid home-care provider (HL7 FHIR US Core, X12 837/270/271 claims and
+    eligibility, NCPDP, EVV aggregator interfaces such as HHAeXchange/Sandata/Tellus) was checked against
+    every public Aidaly surface. None is declared anywhere Aidaly publishes, and with no contract to read,
+    no domain-standard signature can be asserted. Recorded as an honest empty set rather than an inferred one.

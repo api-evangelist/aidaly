@@ -64,5 +64,19 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Aidaly is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://www.nasdaqprivatemarket.com/
+Aidaly is a Miami, Florida-based home care company, founded in 2021 by CEO Margaret "Maggie" Norris, that
+trains, employs and pays family members as professional caregivers so households can draw on Medicaid,
+Medicare and private benefit dollars for care they were already giving unpaid. It runs a software-enabled
+care agency on its own aidalyOS platform — Aidaly Care (a caregiver mobile app with insurance-required
+electronic visit verification, care plans, visit notes and pay tracking), AidalyHQ (a credentialed console
+for supervising nurses), a Learning Studio training library and a care-team nurse network — operating in
+South Florida, Arizona and Michigan with Colorado and Massachusetts announced.
+
+**Aidaly publishes no public API.** A full contract-discovery pass on 2026-09-14 probed every host this
+record knows (aidaly.com, www.aidaly.com, app.aidaly.com) for OpenAPI, Swagger, GraphQL, MCP, agent cards
+and fourteen named `/.well-known/` paths; every one returned 404, including a negative-control path.
+`api.aidaly.com`, `docs.aidaly.com` and `developer.aidaly.com` do not resolve, there is no Aidaly GitHub
+organization, and no first-party package exists on npm, PyPI, RubyGems, crates.io or Packagist. Its
+software is an internal and end-user product rather than a platform API.
+
+- https://www.aidaly.com/

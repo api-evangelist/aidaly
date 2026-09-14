@@ -1,0 +1,107 @@
+generated: '2026-09-14'
+method: probed
+source: live GET of the named /.well-known/ path list on every host this record knows (registrable domain, www,
+  and the app.aidaly.com application host)
+hit_count: 0
+note: 'Every named discovery path returned HTTP 404 on all three hosts. aidaly.com and www.aidaly.com are a Webflow-hosted
+  marketing site whose edge answers any /.well-known/* path with a 404 HTML page reading ''Invalid .well-known request'';
+  app.aidaly.com answers 404 ''Not Found'' in text/plain and 301s its root to www.aidaly.com. The negative-control
+  path returned 404 on each host, so these are true absences and not a path-echoing or SPA catch-all. No WellKnown
+  or SecurityTxt pointer is emitted: this file records an absence, not a served surface.'
+hosts:
+- host: https://aidaly.com
+  path_echo_control: passed
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+  - path: /.well-known/aauth-resource.json
+    status: 404
+  - path: /.well-known/apis.json
+    status: 404
+  - path: /apis.json
+    status: 404
+  - path: /apis.yml
+    status: 404
+  - path: /llms.txt
+    status: 404
+  - path: /.well-known/aidaly-negative-control-9c41be27.json
+    status: 404
+    control: true
+- host: https://www.aidaly.com
+  path_echo_control: passed
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+  - path: /.well-known/aauth-resource.json
+    status: 404
+  - path: /.well-known/apis.json
+    status: 404
+  - path: /apis.json
+    status: 404
+  - path: /apis.yml
+    status: 404
+  - path: /llms.txt
+    status: 404
+  - path: /.well-known/aidaly-negative-control-9c41be27.json
+    status: 404
+    control: true
+- host: https://app.aidaly.com
+  path_echo_control: passed
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+  - path: /.well-known/aauth-resource.json
+    status: 404
+  - path: /.well-known/apis.json
+    status: 404
+  - path: /apis.json
+    status: 404
+  - path: /apis.yml
+    status: 404
+  - path: /llms.txt
+    status: 404
+  - path: /.well-known/aidaly-negative-control-9c41be27.json
+    status: 404
+    control: true
