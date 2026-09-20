@@ -1,0 +1,14 @@
+{
+  "repo": "aidaly",
+  "feeds": [
+    {
+      "source": "https://aidaly.com/company",
+      "feed_url": "https://aidaly.com/company",
+      "title": "",
+      "saved": 0,
+      "method": "none"
+    }
+  ],
+  "post_count": 0,
+  "fetched": "2026-09-19T20:17:39Z"
+}
